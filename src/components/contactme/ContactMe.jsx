@@ -4,6 +4,7 @@ import crossicon from '/src/images/crossicon.svg';
 import {  useDispatch } from 'react-redux';
 import { modaleClosed } from '../../features/modaleSlice';
 import { useSelector } from 'react-redux';
+import blackcross from '/src/images/blackcross.svg'
 
 
 const ContactMe = () => {
@@ -22,7 +23,8 @@ const ContactMe = () => {
       
         <div  className={isDarkModeOn ? "contact-modale-content" : "contact-bglightmodale-content"}>
 
-        <img onClick={()=>{closeTheModale(false)}} className='crossicon' src={crossicon} width='30px' height='30px'/>
+        {isDarkModeOn ? (        <img onClick={()=>{closeTheModale(false)}} className='crossicon' src={crossicon} width='30px' height='30px'/>):(        <img onClick={()=>{closeTheModale(false)}} className='crossicon' src={blackcross} width='30px' height='30px'/>)}
+
 
            <div className={isDarkModeOn ? "contact-me contact-me-title" : "contact-bglightme contact-me-title"} >Contact Me</div>
            <div className='contact-me-name'>

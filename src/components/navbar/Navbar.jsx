@@ -4,8 +4,7 @@ import { navbarValue } from '../../features/navbarSlice';
 import {  useDispatch,useSelector} from 'react-redux';
 import crossicon from '/src/images/crossicon.svg';
 import DarkModeToggle from '../darkmodetoggle/DarkModeToggle';
-
-
+import resume from '/src/images/resume.pdf';
 
 
 const Navbar = () => {
@@ -18,6 +17,15 @@ const Navbar = () => {
     dispatch(navbarValue(navbarstatus))
   }
 
+  const downloadMyResume = () => {
+    var link = document.createElement("a")
+    link.href = resume;
+    link.download = resume;
+    document.body.appendChild(link)
+    link.click();
+    document.body.removeChild(link)
+  }
+
   
   return (
     <div  className={isDarkModeOn ? 'navbar-container darkmodebg' : 'navbar-container lightmodebg'}>
@@ -26,18 +34,14 @@ const Navbar = () => {
 
         <div className='navbar-name'><div>Sanath S B </div><div className='reddot'/></div>
 
-        {navbarexpanded ? ( <div className='navbar-tab'>Projects</div>):('')}
-        {navbarexpanded ? ( <div className='navbar-tab'>Download Resume</div>):('')}
-        {navbarexpanded ? ( <div className='navbar-light-trigger'><DarkModeToggle/></div>):('')}
+        {navbarexpanded ? (<div className='navbar-tab'>Projects</div>) : ('')}
+        {navbarexpanded ? (<div onClick={()=>{downloadMyResume()}} className='navbar-tab'>Download Resume</div>) : ('')}
+        {navbarexpanded ? (<div className='navbar-light-trigger'><DarkModeToggle /></div>) : ('')}
         
-
-       
-
         <div className='navbar-burger-icon'>
 
           {navbarexpanded ? (
-          
-         
+                  
             <svg onClick={() => { expandNavbar(false) }} width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className={isDarkModeOn ? 'navbardarkpath' : 'navbarlightpath'} d="M6 6L18 18" stroke-linecap="round" />
               <path className={isDarkModeOn ? 'navbardarkpath' : 'navbarlightpath'} d="M18 6L6.00001 18" stroke-linecap="round" />

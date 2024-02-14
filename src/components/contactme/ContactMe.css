@@ -81,7 +81,8 @@ font-family: 'Inter', sans-serif;
     border: none;
     background-color: rgb(45, 45, 45);
     padding: 0px 32px;
-    color: var(--portfolio-text-color);
+   
+    color: white;
 }
 .modalebglightinput{
     width: 100%;
@@ -96,7 +97,7 @@ font-family: 'Inter', sans-serif;
 }
 .modaleinput:focus{
     outline: none;
-    color: var(--portfolio-text-color);
+  color: white;
 }
 .submit-btn{
     background-color: red;

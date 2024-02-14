@@ -94,7 +94,7 @@ const FeaturedProjects = () => {
                     <img className={isDarkModeOn ? 'violetballs-balls' : 'blueballs-balls'}  src={violetball}  />
                   <div className='project-list-box '>
 
-                      <div className='project-list-display faderedball'>
+                      <div onClick={() => redirectToShimmering()} className='project-list-display faderedball'>
                           <div className='display-main-screen '>
 
                             
@@ -119,7 +119,7 @@ const FeaturedProjects = () => {
 
                   <div className='project-list-box'>
 
-<div className='project-list-display faderedball'>
+<div onClick={() => redirectToInfideck()} className='project-list-display faderedball'>
     <div className='display-main-screen'>
 
       

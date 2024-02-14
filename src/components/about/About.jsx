@@ -133,7 +133,7 @@ const About = () => {
                     
                     <div className='about-description-des faderedball'>Hi, I am Sanath SB ! I'm a developer with 1 year of web development
                         experience with the past 2 years spent honing my skills in
-                        WordPress, Shopify. And Webflow</div>
+                        React, MongoDB. And Latest Tech Stacks</div>
 
                         <img className={isDarkModeOn ? 'blueballs-balls' : 'blueballs-balls'}  src={blueball}  />
                     <img className={isDarkModeOn ? 'violetballs-balls' : 'blueballs-balls'}  src={violetball}  />
