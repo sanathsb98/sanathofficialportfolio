@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { useSelector } from 'react-redux';
 import blueball from '/src/images/blueball.png';
 import violetball from '/src/images/violetball.png';
+import infideckproj from '/src/images/infideckproj.png';
 
 const FeaturedProjects = () => {
 
@@ -12,6 +13,11 @@ const FeaturedProjects = () => {
     const redirectToShimmering = () => {
         window.location.href = "https://shimmeringlightz.com/";
     }
+    const redirectToInfideck = () => {
+      window.location.href = "https://inficompanyprofile.netlify.app/";
+  }
+
+  
 
     useEffect(() => {
         const cursor = document.querySelector('.cursor');
@@ -93,7 +99,7 @@ const FeaturedProjects = () => {
 
                             
 
-                             <div className='display-page-2'></div>
+                             <div className='display-page-1'></div>
 
                           </div>
                       </div>
@@ -123,17 +129,17 @@ const FeaturedProjects = () => {
     </div>
 </div>
 
-<div className='project-list-controls'>
+            <div className='project-list-controls'>
 
-    <div className='project-list-btn btn1 '>Landing Page</div>
-    <div className='project-list-btn btn2 '>React & Framer Motion</div>
-    <div onClick={()=>redirectToShimmering()}  className='project-list-btn btn3 faderedball'>View Project <svg className='moreicon' width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 9.33333L8.33333 1M8.33333 1H1.66667M8.33333 1V7.66667" stroke="#A9A9A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></div>
+              <div className='project-list-btn btn1 '>Landing Page</div>
+              <div className='project-list-btn btn2 '>React & Framer Motion</div>
+              <div onClick={() => redirectToInfideck()} className='project-list-btn btn3 faderedball'>View Project <svg className='moreicon' width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 9.33333L8.33333 1M8.33333 1H1.66667M8.33333 1V7.66667" stroke="#A9A9A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></div>
 
-</div>
+            </div>
 
-</div>
+          </div>
 
                  
 

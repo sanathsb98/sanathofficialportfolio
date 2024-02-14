@@ -45,7 +45,7 @@
    transform: scale(2.5);
 }
 @media screen and (max-width : 600px) and (min-width:0px){
-    .cursor{
+    .cursor,.blackcursor{
        display: none;
       }
    
