@@ -7,6 +7,10 @@ const Footer = () => {
 
   const isDarkModeOn = useSelector((store)=>store.darkModeSwitch.darkmode)
 
+  const redirectLinkedIn = () => {
+    window.location.href = "https://www.linkedin.com/in/sanath-sb-607319251/";
+}
+
     useEffect(() => {
         const cursor = document.querySelector('.cursor');
         const cursorScale = document.querySelectorAll('.faderedball');
@@ -71,7 +75,7 @@ const Footer = () => {
 
                 <div className='footer-right'>
                 <div className='about-socialicons-container faderedball'>
-                        <div className='about-socialicon'>
+                        <div onClick={()=>{redirectLinkedIn()}} className='about-socialicon'>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.9997 0C7.17757 0 0 7.17757 0 16C0 24.8227 7.17757 32 15.9997 32C24.8222 32 32 24.8227 32 16C31.9997 7.17757 24.8219 0 15.9997 0ZM15.9997 30.4219C8.0476 30.4219 1.57806 23.9524 1.57806 16C1.57806 8.04787 8.0476 1.57806 15.9997 1.57806C23.9519 1.57806 30.4219 8.04787 30.4219 16C30.4217 23.9524 23.9519 30.4219 15.9997 30.4219Z" fill="#484E53" />
                                 <path d="M7.87305 12.6096H11.5757V22.271H7.87305V12.6096Z" fill="#A9A9A9" />
