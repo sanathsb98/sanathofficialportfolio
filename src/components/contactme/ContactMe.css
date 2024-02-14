@@ -1,0 +1,183 @@
+.contact-modale-container{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact-bglightmodale-container{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact-modale-content{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 32px;
+    border: 1px solid var(--portfolio-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 20px;
+    position: relative;
+}
+.contact-bglightmodale-content{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 32px;
+    border: 1px solid var(--portfolio-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 20px;
+    position: relative;  
+}
+.crossicon{
+    position: absolute;
+    top: -22px;
+    right: -32px;
+    cursor: pointer;
+}
+.your-name,.contact-me{
+color: white;
+font-family: 'Inter', sans-serif;
+}
+.your-bglightname{
+    color: rgb(0, 0, 0);
+font-family: 'Inter', sans-serif;
+}
+.contact-bglightme{
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+.modaleinput{
+    width: 100%;
+    min-width: 400px;
+    min-height: 40px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(45, 45, 45);
+    padding: 0px 32px;
+    color: var(--portfolio-text-color);
+}
+.modalebglightinput{
+    width: 100%;
+    min-width: 400px;
+    min-height: 40px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(226, 226, 226);
+    padding: 0px 32px;
+    color: var(--portfolio-text-color);  
+}
+.modaleinput:focus{
+    outline: none;
+    color: var(--portfolio-text-color);
+}
+.submit-btn{
+    background-color: red;
+    padding: 10px 30px;
+    width: 100%;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 22px;
+}
+.submit-btn:hover{
+background-color: green;
+transition: 0.2s ease;
+}
+.contact-me-title{
+    font-size: 32px;
+}
+.contact-me-name{
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width:500px) and (min-width:0px){
+    .modaleinput{
+        
+       min-width: 350px;
+    }
+    .submit-btn{
+     
+        max-width: 350px;
+       
+    }
+    .contact-me-title{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:430px) and (min-width:0px){
+    .modaleinput{    
+       min-width: 300px;
+    }
+    .submit-btn{
+        max-width: 300px; 
+    }
+}
+@media screen and (max-width:375px) and (min-width:0px){
+    .modaleinput{ 
+       min-width: 250px;
+    }
+    .submit-btn{
+        max-width: 250px; 
+    }
+}
+@media screen and (max-width:330px) and (min-width:0px){
+    .modaleinput{    
+       min-width: 180px;
+    }
+    .submit-btn{
+        max-width: 180px;
+    }
+}
+@media screen and (max-width:600px) and (min-width:0px){
+    .crossicon{
+        position: absolute;
+        top: 22px;
+        right: 32px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width:375px) and (min-width:0px){
+    .crossicon{
+        position: absolute;
+        top: -46px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
+

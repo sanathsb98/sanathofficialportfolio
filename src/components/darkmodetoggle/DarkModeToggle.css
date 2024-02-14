@@ -1,0 +1,82 @@
+label{
+    width: 150px;
+    height: 36px;
+    position: relative;
+    display: block;
+    background-color: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0 -5px 15px rgba(255,255,255,0);
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.darkmode-toggle-box{
+    background-color: transparent;
+}
+label::after{
+    content: "";
+    width: 50px;
+    height: 36px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(180deg,#b4b4b4,#000000);
+    border-radius: 100px;
+    box-sizing: 0px 5px 10px rgba(0,0,0.2);
+    transition: 0.4s ease;
+}
+.darkmodetoggler{
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+.darkmodetoggler:checked + label {
+    background: #242424;
+}
+.darkmodetoggler:checked + label::after {
+    left: 150px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label:active::after{
+    width: 80px;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.darkmodetoggler:checked + label + .background {
+    background: #242424;
+}
+
+label svg{
+    position: absolute;
+    width: 30px;
+    top: 2px;
+    z-index: 100;
+}
+
+label svg.sun{
+    left: 110px;
+ 
+    fill: #fff;
+    transition: 0.3s;
+    background-color: transparent;
+}
+label svg.moon{
+    left: 10px;
+    fill: #7e7e7e;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.darkmodetoggler:checked + label svg.sun {
+   fill: #7e7e7e;
+}
+.darkmodetoggler:checked + label svg.moon {
+    fill: #fff;
+ }

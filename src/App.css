@@ -1,0 +1,52 @@
+.cursor{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    transition: transform .2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+  }
+  .blackcursor{
+   position: fixed;
+   width: 8px;
+   height: 8px;
+   margin-top: -20px;
+   border-radius: 50%;
+   border: 2px solid #000000;
+   background: #000000;
+   transition: transform .2s ease;
+   transform-origin: center center;
+   pointer-events: none;
+   z-index: 1000;
+  }
+  .grow,
+.grow-small {
+   transform: scale(22);
+   background: rgb(255, 255, 255);
+   mix-blend-mode:difference;
+   border: none;
+ 
+}
+
+.aboutgrow,
+.aboutgrow-small {
+   transform: scale(12);
+   background: #000000;
+   mix-blend-mode: difference;
+   border: none;
+}
+
+.grow-small {
+   transform: scale(2.5);
+}
+@media screen and (max-width : 600px) and (min-width:0px){
+    .cursor{
+       display: none;
+      }
+   
+}

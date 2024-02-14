@@ -1,0 +1,203 @@
+.featured-projects-container{
+    width: 100%;
+   height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.featured-projects-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+ height: 100%;
+    padding: 120px 120px 40px 120px;
+    gap: 26px;
+    overflow: hidden;
+}
+.projects-title-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+   
+    /* background-color: rgb(42, 42, 42); */
+   padding: 10px 0px;
+   font-family: 'Inter', sans-serif;
+}
+.projects-section-title{
+    font-size: 26px;
+    font-weight: 200;
+    color: var(--portfolio-gray-color);
+}
+.projects-section-description{
+    font-size: 38px;
+    width: 70%;
+    color: var(--portfolio-text-color);
+    
+}
+.projects-listing-section{
+    /* background-color: rgb(114, 114, 114); */
+    width: 100%;
+  gap: 22px;
+    height:100%;
+ justify-content: center;
+    padding: 60px 0px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+}
+.project-list-box{
+    flex: 1px 0px calc(100% - 100px);
+    width: 100%;
+    height: 100%;
+    max-width: 695px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.project-list-display{
+    width: 100%;
+    /* max-width: 700px; */
+    height: 520px;
+    /* background-color: rgb(255 161 161); */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgb(41 41 41);
+    padding: 25px;
+    border-radius: 13px;
+}
+.project-list-controls{
+    width: 100%;
+    height: 60px;
+    /* max-width: 700px; */
+    /* background-color: azure; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.project-list-btn{
+    padding: 10px;
+    color: var(--portfolio-text-color);
+    border-radius: 24px;
+    padding: 12px 20px;
+    border: 1px solid var(--portfolio-gray-color);
+    cursor: pointer;
+}
+.display-main-screen{
+   
+    width: 90%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    /* background-color: rgb(255 103 103); */
+}
+.display-page-1 {
+    width: 60%;
+    max-width: 600px;
+    height: 100%;
+    border-radius: 24px;
+    /* background-color: rgb(184, 201, 145); */
+    margin-top: 50px;
+    z-index: 4;
+    position: absolute;
+    background-image: url(/src/images/shimmeringtwo.png);
+    background-size: cover;
+}
+
+.display-page-2 {
+    width: 80%;
+    height: 100%;
+    max-width: 800px;
+    /* background-color: rgb(190, 137, 175); */
+    z-index: 0;
+    background-image: url(/src/images/shimmeringone.png);
+
+    background-size: cover;
+}
+.projects-listing-button{
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    color: var(--portfolio-text-color);
+    font-size: 18px;
+    padding: 20px;
+    border: 1px solid var(--portfolio-gray-color);
+    cursor: pointer;
+}
+.moreicon{
+    margin-left: 4px;
+}
+
+@media screen and (max-width : 801px) and (min-width:0px){
+    .featured-projects-content{
+        padding: 40px 40px;
+    }
+    .projects-section-description{
+        font-size: 38px;
+        width: 100%;
+    }
+    .projects-listing-section {
+      
+        padding: 30px 0px;
+       
+    }
+   
+}
+@media screen and (max-width : 1050px) and (min-width:0px){
+    .sec1{
+        flex-direction: column;
+        gap: 62px;
+    }
+    .project-list-display {
+        width: 100%;
+        /* max-width: 700px; */
+     
+        border: 1px solid var(--portfolio-gray-color);
+       padding: 20px;
+       border-radius: 13px;
+    }
+}
+@media screen and (max-width : 600px) and (min-width:0px){
+    .project-list-btn{
+        font-size: 14px;
+        color: black;
+        background-color: aliceblue;
+        font-weight: 600;
+    } 
+    .btn2,.btn1{
+        display: none;
+    }
+    .projects-listing-button{
+        font-size: 14px;
+    }
+    .moreicon{
+        display: none;
+    }
+    .display-page-2 {
+        width: 100%;
+    }
+    .display-main-screen {
+width: 100%;
+    }
+   
+}
+@media screen and (max-width : 280px) and (min-width:0px){
+    .featured-projects-content {
+        padding: 40px 20px;
+    }
+}
+

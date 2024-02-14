@@ -1,0 +1,106 @@
+.navbar-container{
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-color: rgb(10, 10, 10); */
+   z-index: 10;
+   border-bottom: 1px solid black;
+ 
+ 
+
+}
+.navbar-content {
+    padding: 8px 120px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    /* background-color: rgb(34, 34, 34); */
+    /* background-color: rgb(207, 207, 207); */
+    transition: 0.2s ease;
+
+}
+.navbar-mobile{
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+align-items: center;
+    align-items: flex-start;
+    padding:  40px ;
+border-bottom: 1px solid #606060;
+   max-width: 1600px;
+
+transition: 0.2s ease;
+ 
+
+}
+.navbar-light-trigger{
+    margin-top: -16px;
+    background-color: transparent;
+}
+.downlaodresume{
+    border: 1px solid var(--portfolio-gray-color);
+    padding: 12px;
+    cursor: pointer;
+}
+.navbar-tab{
+    font-size: 22px;
+    color: var(--portfolio-text-color);
+    font-family: 'Inter', sans-serif;
+}
+.navbar-name{
+    color: var(--portfolio-text-color);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.navbar-burger,
+.navbar-path {
+    cursor: pointer;
+    fill: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+}
+.reddot{
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 8px;
+}
+.navbar-burger-icon,.navbar-tab,.navbarcrossicon{
+    cursor: pointer;
+}
+.navbardarkpath{
+    fill: rgb(255, 255, 255);
+    stroke: white;
+}
+.navbarlightpath{
+    fill: rgb(0, 0, 0);
+    stroke: black;
+}
+@media screen and (max-width:800px) and (min-width:0px)  {
+    .navbar-content{
+        padding: 8px 20px ;
+       
+    }
+}
+@media screen and (max-width:350px) and (min-width:0px)  {
+    .navbar-content{
+        padding: 4px 20px ;
+       
+    }
+}

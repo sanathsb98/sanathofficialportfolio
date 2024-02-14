@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--portfolio-bg-color);
+}
+:root{
+  --portfolio-bg-color : none;
+ --portfolio-text-color : none;
+ --portfolio-gray-color : rgb(108, 108, 108);
+ 
+
+}
+.darkmodebg{
+  background-color: black;
+  color: white;
+}
+.lightmodebg{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar{
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00ccff; /* Color of the scrollbar thumb */
+  border-radius: 40px; /* Roundness of the scrollbar thumb */
+}
