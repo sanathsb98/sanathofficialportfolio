@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 import blueball from '/src/images/blueball.png';
 import violetball from '/src/images/violetball.png';
 import infideckproj from '/src/images/infideckproj.png';
+import { Link } from 'react-router-dom';
+
 
 const FeaturedProjects = () => {
 
@@ -17,6 +19,11 @@ const FeaturedProjects = () => {
       window.location.href = "https://inficompanyprofile.netlify.app/";
   }
 
+
+  const redirectToProjects = () => {
+   window.location.href = "/myprojects";
+   window.scrollTo(0,0)
+  }
   
 
     useEffect(() => {
@@ -147,7 +154,9 @@ const FeaturedProjects = () => {
 
               
 
-              <div className='projects-listing-button faderedball'>Explore all the project</div>
+              <div className='projects-listing-button faderedball'>
+                <Link onClick={()=>{redirectToProjects()}} to="/myprojects" className='notextdec'>Explore all the project</Link>
+              </div>
 
 
           </div>

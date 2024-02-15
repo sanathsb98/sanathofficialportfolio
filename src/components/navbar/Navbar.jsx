@@ -5,6 +5,7 @@ import {  useDispatch,useSelector} from 'react-redux';
 import crossicon from '/src/images/crossicon.svg';
 import DarkModeToggle from '../darkmodetoggle/DarkModeToggle';
 import resume from '/src/images/resume.pdf';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -26,15 +27,32 @@ const Navbar = () => {
     document.body.removeChild(link)
   }
 
+  const redirectToHome = () => {
+    window.location.href = "/";
+    window.scrollTo(0,0)
+  }
+
+  const redirectToProjects = () => {
+    window.location.href = "/myprojects";
+    window.scrollTo(0,0)
+  }
+
   
   return (
     <div  className={isDarkModeOn ? 'navbar-container darkmodebg' : 'navbar-container lightmodebg'}>
 
       <div  className={navbarexpanded ? 'navbar-mobile' : 'navbar-content'}>
 
-        <div className='navbar-name'><div>Sanath S B </div><div className='reddot'/></div>
+        <div className='navbar-name'><div><Link to="/" className='notextdec'>Sanath SB</Link></div><div className='reddot'/></div>
 
-        {navbarexpanded ? (<div className='navbar-tab'>Projects</div>) : ('')}
+        {navbarexpanded ? (<div className='navbar-tab'>
+          <Link to="/" onClick={()=>{redirectToHome()}} className='notextdec'>Home</Link>
+        </div>) : ('')}
+
+        {navbarexpanded ? (<div className='navbar-tab'>
+          <Link to="/myprojects" onClick={()=>{redirectToProjects()}} className='notextdec'>Projects</Link>
+        </div>) : ('')}
+
         {navbarexpanded ? (<div onClick={()=>{downloadMyResume()}} className='navbar-tab'>Download Resume</div>) : ('')}
         {navbarexpanded ? (<div className='navbar-light-trigger'><DarkModeToggle /></div>) : ('')}
         

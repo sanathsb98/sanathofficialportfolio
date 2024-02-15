@@ -58,6 +58,11 @@ transition: 0.2s ease;
     font-size: 22px;
     color: var(--portfolio-text-color);
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.notextdec{
+    text-decoration: none;
+    color: var(--portfolio-text-color);
 }
 .navbar-name{
     color: var(--portfolio-text-color);
