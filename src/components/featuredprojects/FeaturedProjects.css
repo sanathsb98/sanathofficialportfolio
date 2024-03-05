@@ -120,6 +120,14 @@
     background-image: url(/src/images/infideckproj.png);
     background-size: cover;
 }
+.display-page-3 {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    z-index: 0;
+    background-image: url(/src/images/socialmediaapp.png);
+    background-size: cover;
+}
 .projects-listing-button{
     font-family: 'Inter', sans-serif;
     padding: 20px;
