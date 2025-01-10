@@ -24,7 +24,7 @@ const MyProjects = () => {
     window.location.href = "https://ecommerce-frontend-silk.vercel.app/";
   }
   const redirectToEcomApp = () => {
-    window.location.href = "https://client-iota-one.vercel.app/";
+    window.location.href = "https://pg-shop-app-frontend.vercel.app/";
   }
 
 
