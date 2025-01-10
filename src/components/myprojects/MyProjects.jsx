@@ -23,6 +23,9 @@ const MyProjects = () => {
   const redirectToSocialMedia = () => {
     window.location.href = "https://ecommerce-frontend-silk.vercel.app/";
   }
+  const redirectToEcomApp = () => {
+    window.location.href = "https://client-iota-one.vercel.app/";
+  }
 
 
   return (
@@ -99,6 +102,28 @@ const MyProjects = () => {
               </div>
 
             </div>
+
+            <div className='project-list-box'>
+
+              <div onClick={() => redirectToEcomApp()} className='project-list-display faderedball'>
+                <div className='display-main-screen'>
+                  <div className='display-page-4'></div>
+                </div>
+              </div>
+
+              <div className='project-list-controls'>
+
+                <div className='project-list-btn btn1 '>Social Media</div>
+                <div className='project-list-btn btn2 '>MongoDB & Node</div>
+                <div onClick={() => redirectToEcomApp()} className='project-list-btn btn3 faderedball'>View Project <svg className='moreicon' width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 9.33333L8.33333 1M8.33333 1H1.66667M8.33333 1V7.66667" stroke="#A9A9A9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+
+              </div>
+
+            </div>
+
+            
 
 
 
