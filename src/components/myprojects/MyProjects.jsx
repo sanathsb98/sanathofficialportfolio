@@ -32,7 +32,6 @@ const MyProjects = () => {
 
 
 
-
   return (
     <div className='myprojects-container'>
 
